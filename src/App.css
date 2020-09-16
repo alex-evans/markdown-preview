@@ -1,0 +1,44 @@
+
+#header {
+  background-color: #4C5355;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+#footer {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #4C5355;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+}
+
+#quote-box {
+  background-color: #CBCDCB;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+
+#text {
+  text-align: center;
+  color: #607D86;
+}
+
+#author {
+  text-align: center;
+  color: #C44B4F;
+}
+
