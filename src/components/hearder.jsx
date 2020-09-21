@@ -2,9 +2,13 @@ import React from "react";
 
 function Header() {
     return (
-        <nav id='header'>
-            Markdown Preview
-        </nav>
+        <header>
+            <nav id='header'>
+                <h1>
+                    Markdown Preview
+                </h1>
+            </nav>
+        </header>
     )
 }
 

@@ -2,7 +2,6 @@ import React from "react";
 import { connect } from "react-redux";
 import { saveText } from "../redux/actions";
 
-
 class Editor extends React.Component {
     constructor(props) {
         super(props);
@@ -18,19 +17,23 @@ class Editor extends React.Component {
 
     render() {
         return (
-            <div id="editor-box">
+            <div className="editor-box">
                 <textarea 
                     id="editor" 
-                    rows="20" 
-                    cols="50"
                     onChange={this.handleChange}
-                />
+                >
+                    {this.props.text}
+                </textarea>
             </div>
         )
     }
 }
 
+const mapStateToProps = state => {
+    return state
+}
+
 export default connect(
-    null,
+    mapStateToProps,
     { saveText }
 )(Editor);

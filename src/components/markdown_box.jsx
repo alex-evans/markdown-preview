@@ -13,10 +13,10 @@ class MarkdownBox extends React.Component {
 
     render() {
         return (
-            <div id="markdown-box">
+            <main id="markdown-box" className="markdown-container">
                 <Editor />
                 <Preview />
-            </div>
+            </main>
         )
     }
 }

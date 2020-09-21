@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import Header from "./components/hearder";
 import Footer from "./components/footer";
 import MarkdownBox from "./components/markdown_box";
@@ -7,7 +7,7 @@ import MarkdownBox from "./components/markdown_box";
 
 function App() {
   return (
-    <div>
+    <div id="app">
       <Header />
       <MarkdownBox />
       <Footer />

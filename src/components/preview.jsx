@@ -1,12 +1,14 @@
 import React from "react";
 import { connect } from "react-redux";
-
+import marked from "marked";
 
 class Preview extends React.Component {
     render() {
         return (
-            <div id="preview">
-                {this.props.text}
+            <div className="preview-box">
+                <div id="preview">
+                    <div dangerouslySetInnerHTML={{ __html: marked(this.props.text) }} />
+                </div>
             </div>
         )
     }
